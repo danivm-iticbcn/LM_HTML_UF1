@@ -1,0 +1,26 @@
+/*Ajustem el titol de la pàgina*/
+h1{
+    color: rgb(180, 14, 180);
+    text-align: center;
+    font-weight: bold;
+}
+/*Cambiem de color i separem una mica el titol de la taula*/
+caption{
+    color: blue;
+    margin-bottom: 2%;
+}
+/*Ajustem la taula al centre*/
+table{
+    margin: auto;
+}
+/*Ajustem el contorn de la taula*/
+td, th, tr, table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-inline: 5px;
+}
+/*Fons de la fila de capçelera*/
+th{
+    background-color: rgb(201, 194, 194);
+    font-weight: bold;
+}
