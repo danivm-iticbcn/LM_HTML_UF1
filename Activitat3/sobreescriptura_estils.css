@@ -3,7 +3,7 @@
     color: black;
 }
 /*2. titol nivell 1 fons blanc lletra gris*/
-#titol-pagina {
+h1 {
     background-color: white;
     color: grey;
 }
@@ -12,10 +12,22 @@
     color: green;
     text-decoration: underline;
 }
-
 /*4. enllaços del paràgraf2 en italica*/
-
-
+.paragraf2 > a{
+    font-style: italic;
+}
 /*5. footer general del web centrat i lletra de 10px*/
-
+#container > footer{
+    text-align: center;
+    font-size: 10px;
+}
 /*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+
+/*
+6.1 Quins elements passen a veure’s diferent i quins es continuen veient tal com tu havies definit? Per què?
+El h1 no té background white i els strongs del paragraf 2 no son verds sino blaus i això pasa perque al altre css
+posa que sigui d'aquesta forma i predomina l'ultim que llegueix.
+
+6.2 Com ho faries perquè tots els elements es continuïn veient tal com es veia abans d’invertir l’ordre de càrrega? Proposa un codi CSS.
+Podria fer-ho afegint !important on es necesari perque es canvia.
+*/
