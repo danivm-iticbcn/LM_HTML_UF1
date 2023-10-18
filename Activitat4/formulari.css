@@ -1,0 +1,11 @@
+/* Color de fons */
+body{
+    background-color: rgb(245, 215, 176);
+    font-family: sans-serif;
+}
+.nomemail{
+    width: 300px;
+}
+#formEdat{
+    width: 100px;
+}
