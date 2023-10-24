@@ -1,11 +1,46 @@
+/*Color titols h1*/
+h1{
+    color: rgb(225, 150, 10);
+}
+/* Mida titol h2 */
+h2{
+    font-size: 21px;
+}
 /* Color de fons */
 body{
-    background-color: rgb(245, 215, 176);
+    background-color: rgb(240, 220, 193);
     font-family: sans-serif;
 }
+/*Mida de les caixes dels inputs */
 .nomemail{
     width: 300px;
 }
 #formEdat{
     width: 100px;
+}
+/*Ajustem mides i colors del botó */
+.boton{
+    color: black;
+    background-color: rgb(212, 140, 6);
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+/*Efectes quan pasem el ratolí per dalt*/
+.boton:hover{
+    background-color: greenyellow;
+    width: 105px;
+    height: 55px;
+}
+/*Apliquem un focus de background per quan clickem a un elemnet*/
+input:focus, textarea:focus{
+    background-color: rgb(215, 215, 215);
+}
+select:focus{
+    background-color: rgb(228, 239, 215);
+}
+/*Mida de la cixa del text llarg*/
+textarea{
+    width: 500px;
+    height: 150px;
 }
