@@ -1,33 +1,46 @@
-/*1. color general de la lletra negra*/
-* {
+/*Color titols h1*/
+h1{
+    color: rgb(225, 150, 10);
+}
+/* Mida titol h2 */
+h2{
+    font-size: 21px;
+}
+/* Color de fons */
+body{
+    background-color: rgb(240, 220, 193);
+    font-family: sans-serif;
+}
+/*Mida de les caixes dels inputs */
+.nomemail{
+    width: 300px;
+}
+#formEdat{
+    width: 100px;
+}
+/*Ajustem mides i colors del botó */
+.boton{
     color: black;
+    background-color: rgb(212, 140, 6);
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
 }
-/*2. titol nivell 1 fons blanc lletra gris*/
-h1 {
-    background-color: white;
-    color: grey;
+/*Efectes quan pasem el ratolí per dalt*/
+.boton:hover{
+    background-color: greenyellow;
+    width: 105px;
+    height: 55px;
 }
-/*3. tots els strong en color verd i subratllats*/
-.paragraf1 strong, .paragraf2 strong{
-    color: green;
-    text-decoration: underline;
+/*Apliquem un focus de background per quan clickem a un elemnet*/
+input:focus, textarea:focus{
+    background-color: rgb(215, 215, 215);
 }
-/*4. enllaços del paràgraf2 en italica*/
-.paragraf2 > a{
-    font-style: italic;
+select:focus{
+    background-color: rgb(228, 239, 215);
 }
-/*5. footer general del web centrat i lletra de 10px*/
-#container > footer{
-    text-align: center;
-    font-size: 10px;
+/*Mida de la cixa del text llarg*/
+textarea{
+    width: 500px;
+    height: 150px;
 }
-/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
-
-/*
-6.1 Quins elements passen a veure’s diferent i quins es continuen veient tal com tu havies definit? Per què?
-El h1 no té background white i els strongs del paragraf 2 no son verds sino blaus i això pasa perque al altre css
-posa que sigui d'aquesta forma i predomina l'ultim que llegueix.
-
-6.2 Com ho faries perquè tots els elements es continuïn veient tal com es veia abans d’invertir l’ordre de càrrega? Proposa un codi CSS.
-Podria fer-ho afegint !important on es necesari perque es canvia.
-*/

@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8">
-        <title>Formulari</title>
-        <link rel="stylesheet" href="formulari.css">
-    </head>
-    <body>
-        <h1>Formulari de contacte</h1>
-        <form id="formContacte" action="formularienviat.html">
-            <!-- Nom // text curt -->
-            <div>
-                <label for="formNom">Nom</label>
-                <input class="nomemail" id="formNom" type="text" required>
-            </div><br>
-            <!-- Email // email -->
-            <div>
-                <label for="formEmail">Email</label>
-                <input class="nomemail" id="formEmail" type="email" required>
-            </div><br>
-            <!-- Edat // number -->
-            <div>
-                <label for="formEdat">Edat</label>
-                <input id="formEdat" type="number" required>
-            </div><br>
-            <!-- ciutat // dropdown -->
-            <div>
-                <label for="formCity">Ciutat</label>
-                <select id="formCity" required>
-                    <option>Barcelona</option>
-                    <option>Madrid</option>
-                    <option>Valencia</option>
-                    <option>Sevilla</option>
-                </select>
-            </div>
-            <!-- Aficions // check -->
-            <div>
-                <h2>Quines son les teves aficions?</h2>
+<head>
+    <meta charset="utf-8">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="formulari.css">
+</head>
+<body>
+<h1>Formulari de contacte</h1>
+<form id="formContacte" action="formularienviat.html">
+    <!-- Nom // text curt -->
+    <div>
+        <label for="formNom">Nom</label>
+        <!--Etiqueta per recollir dades del usuari-->
+        <input class="nomemail" id="formNom" type="text" required>
+    </div><br>
+    <!-- Email // email -->
+    <div>
+        <label for="formEmail">Email</label>
+        <input class="nomemail" id="formEmail" type="email" required>
+    </div><br>
+    <!-- Edat // number -->
+    <div>
+        <label for="formEdat">Edat</label>
+        <input id="formEdat" type="number" required>
+    </div><br>
+    <!-- ciutat // dropdown -->
+    <div>
+        <label for="formCity">Ciutat</label>
+        <!--Etiqueta per fer el dropdawn-->
+        <select id="formCity" required>
+            <!--Opcions de ciutat-->
+            <option>Barcelona</option>
+            <option>Madrid</option>
+            <option>Valencia</option>
+            <option>Sevilla</option>
+        </select>
+    </div>
+    <!-- Aficions // check -->
+    <div>
+        <h2>Quines son les teves aficions?</h2>
 
-                <label for="formEsport">Esport</label>
-                <input id="formEsport" type="checkbox" name="aficions" checked>
-                <br>
-                <label for="formLlegir">Llegir</label>
-                <input id="formLlegir" type="checkbox" name="aficions">
-                <br>
-                <label for="formMusica">Musica</label>
-                <input id="formMusica" type="checkbox" name="aficions">
-                <br>
-                <label for="formVideojocs">Videjocs</label>
-                <input id="formVideojocs" type="checkbox" name="aficions">
-            </div>
-            <!-- Curs actual // radio -->
-            <div>
-                <h2>Quin grau estas cursant?</h2>
+        <input id="formEsport" type="checkbox" name="aficions">
+        <label for="formEsport">Esport</label>
+        <br>
+        <input id="formLlegir" type="checkbox" name="aficions">
+        <label for="formLlegir">Llegir</label>
+        <br>
+        <input id="formMusica" type="checkbox" name="aficions">
+        <label for="formMusica">Musica</label>
+        <br>
+        <input id="formVideojocs" type="checkbox" name="aficions" checked>
+        <label for="formVideojocs">Videjocs</label>
+    </div>
+    <!-- Curs actual // radio -->
+    <div>
+        <h2>Quin grau estas cursant?</h2>
 
-                <label for="formDAW">DAW</label>
-                <input id="formDAW" type="radio" name="curs">
-                <br>
-                <label for="formDAM">DAM</label>
-                <input id="formDAM" type="radio" name="curs">
-                <br>
-                <label for="formASIX">ASIX</label>
-                <input id="formASIX" type="radio" name="curs"><br><br>
+        <input id="formDAW" type="radio" name="curs" checked>
+        <label for="formDAW">DAW</label>
+        <br>
+        <input id="formDAM" type="radio" name="curs">
+        <label for="formDAM">DAM</label>
+        <br>
+        <input id="formASIX" type="radio" name="curs">
+        <label for="formASIX">ASIX</label><br><br>
 
-                <label for="formAny">Any en curs</label><br>
-                <select id="formAny" required>
-                    <option>1er</option>
-                    <option>2on</option>
-                </select>
-            </div>
-            <!-- Problema // textarea -->
-            <div>
-                <h2>Per què ens contactes?</h2>
-                <textarea placeholder="Escriu el teu problema" required></textarea>
-            </div>
-            <br>
-            <!-- Enviar -->
-            <button type="submit">Enviar</button>
-        </form>
-    </body>
+        <label for="formAny">Any en curs</label><br>
+        <select id="formAny" required>
+            <!--Opcions del curs-->
+            <option>1er</option>
+            <option>2on</option>
+        </select>
+    </div>
+    <!-- Problema // textarea -->
+    <div>
+        <h2>Per què ens contactes?</h2>
+        <textarea placeholder="Escriu el teu problema" required></textarea>
+    </div>
+    <br>
+    <!-- Enviar -->
+    <button class="boton" type="submit">Enviar</button>
+</form>
+</body>
 </html>
