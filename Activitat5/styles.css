@@ -1,0 +1,112 @@
+/*Quitem margens del body*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*fixem el header i possem fons*/
+header{
+    position: fixed;
+    top: 0;
+    background-color: rgb(52, 50, 50);
+    width: 100%;
+    height: 16vh;
+}
+/*navegació de les sections*/
+nav{
+    background-color: rgb(52, 50, 50);
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 50px;
+}
+#navsec1, #navsec2{
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
+/*margens per separar les sections del header i footer*/
+main{
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+/*espai sota sections*/
+#section1, #section2{
+    margin-bottom: 2vh;
+}
+/*mides i color per les caixes de les sections*/
+.sections{
+    margin-inline: 2vw;
+    padding-left: 1vw;
+    padding-top: 1px;
+    padding-bottom: 6px;
+    height: 270px;
+    width: 94vw;
+    background-color: rgb(195, 188, 188);
+    /*ajustar on surt la pàgina quan cliques al nav*/
+    scroll-margin-top: 120px;
+}
+/*marge dins de la caixa de sections*/
+section > h2, section > p{
+    padding-left: 1vh;
+}
+/*text del copyrigth dis del footer*/
+#copyrigth{
+    position: relative;
+    bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+/*mida i color del footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    background-color: rgb(52, 50, 50);
+}
+/*-------FLEX I MEDIA QUERY-----EXTRA-----*/
+/*flex per les secions*/
+.sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Imatge section1*/
+#imgdb{
+    width: 10vw;
+    height: 12.5vh;
+    padding-right:20px;
+    padding-top: 20px;
+}
+/*imatge de la section2*/
+#imglengmarc{
+    width: 6vw;
+    height: 10vh;
+    padding-right:20px;
+    padding-top: 20px;
+}
+/*Imatge de section3*/
+#imgjava{
+    width: 8vw;
+    height: 13vh;
+    padding-right:20px;
+    padding-top: 20px;
+}
+/*Canvis per ajustar elements quan la pantalla es fa més petita*/
+@media (width <= 800px) {
+    /*Cambiamos el tamaño del texto*/
+    #imgdb{
+        width: 15vh;
+        height: 13vh;
+    }
+    #imglengmarc{
+        width: 9vw;
+        height: 8vh;
+    }
+    #imgjava{
+        width: 9.5vw;
+        height: 7vh;
+        padding-left: 10px;
+    }
+}
