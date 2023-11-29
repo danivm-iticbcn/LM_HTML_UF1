@@ -1,0 +1,75 @@
+<botiga>
+    <!--Tipus de producte que hi ha-->
+    <tipus_prodcute>
+        <!--Producte amb id-->
+        <normals id="N">
+            <cadira id="1">
+                <!--Dades del producte-->
+                <identificació>
+                    <marca>SKLUM</marca>
+                    <nom>Cloda</nom>
+                </identificació>
+                <preu>69.95€</preu>
+                <quantitat>67</quantitat>
+            </cadira>
+            <cadira id="2">
+                <!--Dades del producte-->
+                <identificació>
+                    <marca>Regalos Miguel</marca>
+                    <nom>Synk</nom>
+                </identificació>
+                <preu>29.95€</preu>
+                <quantitat>67</quantitat>
+            </cadira>
+        </normals>
+        <!--Seguent tipus-->
+        <rodes id="R">
+            <cadira id="4">
+                <identificació>
+                    <marca>OrtoEspaña</marca>
+                    <nom>Frienze</nom>
+                </identificació>
+                <motor>Sí</motor>
+                <preu>1209€</preu>
+                <quantitat>37</quantitat>
+            </cadira>
+        </rodes>
+    </tipus_prodcute>
+
+    <socis>
+        <!--Socis que es fan al 2023 (Aquest anys)-->
+        <nous id="2023">
+            <client id="C1">
+                <!--Dades de client-->
+                <nom>Paula</nom>
+                <adreça>
+                    <!--Dades d'adreça-->
+                    <carrer>Gran via</carrer>
+                    <codi_postal>08020</codi_postal>
+                    <provincia>Barcelona</provincia>
+                </adreça>
+                <comprat>
+                    <id_tipus_>N</id_tipus_> <!--El id esta associat a cada tipus-->
+                    <id_producte>1</id_producte> <!--El id esta associat a cada producte-->
+                </comprat>
+                <any_alta>2023</any_alta>
+            </client>
+        </nous>
+        <!--Socis que s'han fet en altre anys-->
+        <antics>
+            <client id="C2">
+                <nom>Marcos</nom>
+                <adreça>
+                    <carrer>Gran via</carrer>
+                    <codi_postal>08020</codi_postal>
+                    <provincia>Barcelona</provincia>
+                </adreça>
+                <comprat>
+                    <id_tipus>R</id_tipus>
+                    <id_producte>4</id_producte>
+                </comprat>
+                <any_alta>2018</any_alta>
+            </client>
+        </antics>
+    </socis>
+</botiga>
