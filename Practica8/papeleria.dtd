@@ -1,0 +1,19 @@
+<!--FET PER: JAVIER GIMENEZ, ACHRAF CHAKIR, HECTOR ROS Y DANIEL-->
+<!ELEMENT papereria (estoc, clients)>
+<!ELEMENT estoc (material*)>
+<!ELEMENT clients (client+)>
+<!ELEMENT material (producte+)>
+<!ELEMENT client (nom, cognom, adreca, compra+)>
+<!ELEMENT compra (#PCDATA)>
+<!ELEMENT producte (nom, preu)>
+<!ELEMENT adreca (carrer, codiPostal?)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT carrer (#PCDATA)>
+<!ELEMENT codiPostal (#PCDATA)>
+<!--ATRIBUTS-->
+<!ATTLIST material grup (oficina|escolar|escriptura|llibretesIpaper) #REQUIRED>
+<!ATTLIST producte id ID #REQUIRED>
+<!ATTLIST client id ID #REQUIRED>
+<!ATTLIST compra ref IDREF #REQUIRED>

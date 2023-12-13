@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CORREGIT PER: JAVIER GIMENEZ, ACHRAF CHAKIR, HECTOR ROS Y DANIEL-->
+<!DOCTYPE papereria SYSTEM "papeleria.dtd">
+<papereria>
+    <estoc>
+        <!--Tipus de material-->
+        <material grup="escriptura">
+            <!--Llistat de productes-->
+            <producte id="EC001">
+                <nom>Boligraf</nom>
+                <preu>0.70</preu>
+            </producte>
+
+            <producte id="EC002">
+                <nom>Llapis</nom>
+                <preu>0.50</preu>
+            </producte>
+
+            <producte id="EC003">
+                <nom>Subrallador</nom>
+                <preu>1.00</preu>
+            </producte>
+
+            <producte id="EC004">
+                <nom>Rotulador</nom>
+                <preu>0.80</preu>
+            </producte>
+
+            <producte id="EC005">
+                <nom>Portaminas</nom>
+                <preu>1.00</preu>
+            </producte>
+
+        </material>
+
+        <material grup="llibretesIpaper">
+
+            <producte id="LP001">
+                <nom>Llibreta</nom>
+                <preu>0.50</preu>
+            </producte>
+
+            <producte id="LP002">
+                <nom>Bloc de notes</nom>
+                <preu>2</preu>
+            </producte>
+
+            <producte id="LP003">
+                <nom>Sobre</nom>
+                <preu>0.30</preu>
+            </producte>
+
+            <producte id="LP004">
+                <nom>Pack de 100 fulls</nom>
+                <preu>7</preu>
+            </producte>
+
+        </material>
+
+        <material grup="oficina">
+
+            <producte id="OF001">
+                <nom>Carpetas</nom>
+                <preu>1.20</preu>
+            </producte>
+
+            <producte id="OF002">
+                <nom>Arxivadors</nom>
+                <preu>2.50</preu>
+            </producte>
+
+            <producte id="OF003">
+                <nom>Pack de 50 clips</nom>
+                <preu>2</preu>
+            </producte>
+
+            <producte id="OF004">
+                <nom>Pack de 100 grapes</nom>
+                <preu>2</preu>
+            </producte>
+
+            <producte id="OF005">
+                <nom>Cinta adhesiva</nom>
+                <preu>1.20</preu>
+            </producte>
+
+        </material>
+
+        <material grup="escolar">
+
+            <producte id="ES001">
+                <nom>Tissora</nom>
+                <preu>1.20</preu>
+            </producte>
+
+            <producte id="ES002">
+                <nom>Pegament</nom>
+                <preu>1.50</preu>
+            </producte>
+
+            <producte id="ES003">
+                <nom>Cartulina</nom>
+                <preu>0.90</preu>
+            </producte>
+
+            <producte id="ES004">
+                <nom>Regla</nom>
+                <preu>1.00</preu>
+            </producte>
+
+            <producte id="ES005">
+                <nom>Compas</nom>
+                <preu>4.50</preu>
+            </producte>
+
+        </material>
+    </estoc>
+
+    <clients>
+        <!--Llistat de clients-->
+        <client id="f001">
+            <nom>Pep</nom>
+            <cognom>Vila</cognom>
+            <adreca>
+                <carrer>C/ Nou, 43</carrer>
+                <codiPostal>08014</codiPostal>
+            </adreca>
+            <compra ref="ES002"></compra>
+        </client>
+
+        <client id="f002">
+            <nom>María</nom>
+            <cognom>Sánchez</cognom>
+            <adreca>
+                <carrer>Plaça del Pedró, 2</carrer>
+                <codiPostal>08003</codiPostal>
+            </adreca>
+            <compra ref="ES004"></compra>
+        </client>
+
+        <client id="f003">
+            <nom>Sandra</nom>
+            <cognom>Pérez</cognom>
+            <adreca>
+                <carrer>C/ Amèlia, 55</carrer>
+            </adreca>
+            <compra ref="ES003"></compra>
+        </client>
+    </clients>
+</papereria>
+<!--HEM AFEGIT L'ETIQUETA COMPRA PER PODER UTILITZAR UN IDREF AL DTD-->
+<!--HEM FET QUE EL CODI POSTAL NO SIGUI OBLIGATORI (0 O 1 VEGADA)-->
+<!--HEM CANVIAT ADREÇA PER ADRECA PER NO TENIR ERRORS DE CODIFICACIÓ-->
