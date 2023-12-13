@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+div{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 55px;
+    margin: 5px;
+    /*Flex*/
+    flex-direction: row;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+div:hover{
+    width: 210px;
+    height: 210px;
+    transition: 1s;
+    background-color: lightgreen;
+}

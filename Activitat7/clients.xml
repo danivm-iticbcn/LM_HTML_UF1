@@ -1,0 +1,31 @@
+<socis>
+    <!--Socis que es fan al 2023 (Aquest anys)-->
+    <nous year="2023">
+        <!--Clients-->
+        <client>
+            <!--Dades de client-->
+            <nom>Paula</nom>
+            <adreça>
+                <!--Dades d'adreça-->
+                <carrer>Gran via</carrer>
+                <codi_postal>08020</codi_postal>
+                <provincia>Barcelona</provincia>
+            </adreça>
+            <!--El id esta associat a cada producte-->
+            <id_producte_comprat>1</id_producte_comprat>
+        </client>
+    </nous>
+    <!--Socis que s'han fet en altre anys-->
+    <antics>
+        <client>
+            <nom>Marcos</nom>
+            <adreça>
+                <carrer>Gran via</carrer>
+                <codi_postal>08020</codi_postal>
+                <provincia>Barcelona</provincia>
+            </adreça>
+            <id_producte_comprat>1</id_producte_comprat>
+        </client>
+    </antics>
+
+</socis>
