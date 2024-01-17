@@ -1,0 +1,99 @@
+{
+    "pokemons":[
+        {   
+            "id": 487,
+            "nom": "Giratina",
+            "pes": {
+                "unitat_mesura": "kg",
+                "valor": 750
+            },
+            "altura":{
+                "unitat_mesura": "cm",
+                "valor": 450
+            },
+            "estadistiques":{
+                "velocitat": 2,
+                "fortalesa": 5,
+                "precissio": 4,
+                "resistencia": 5
+            },
+            "moviments":[
+                {
+                    "nom": "Golpe Umbrío",
+                    "descripcio": "En el primer turno el usuario desaparece en una dimensión alterna donde no puede ser golpeado por los movimientos del oponente. En el segundo turno reaparece y causa daño. Sin embargo, a pesar de que se desaparezca en una dimensión alterna, el usuario es afectado por daños provocados por el clima como tormenta arena o granizo.",
+                    "potencia": 120,
+                    "Contacte": "Si"
+                },
+                {
+                    "nom": "Garra dragón",
+                    "descripcio": "Causa daño y no tiene ningún efecto secundario",
+                    "potencia": 80,
+                    "Contacte": "Si"
+                },
+                {
+                    "nom": "Tierra viva",
+                    "descripcio": "Causa daño y tiene una probabilidad de un 10% de reducir un nivel la defensa del objetivo.",
+                    "potencia": 90,
+                    "Contacte": "No"
+                }
+            ],
+            "imatge": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//487.png",
+            "evolucio": [
+                {
+                   "id": 487,
+                   "nivell_evolucio": 4000
+                }
+                
+            ]
+        },
+        {
+            "id": 147,
+            "nom": "Dratini",
+            "pes": {
+                "unitat_mesura": "kg",
+                "valor": 3.3
+            },
+            "altura":{
+                "unitat_mesura": "cm",
+                "valor": 180
+            },
+            "estadistiques":{
+                "velocitat": 5,
+                "fortalesa": 3,
+                "precissio": 3,
+                "resistencia": 4
+            },
+            "moviments":[
+                {
+                    "nom": "Hiperrayo",
+                    "descripcio": "Causa daño y no tiene ningún efecto secundario",
+                    "potencia": 150,
+                    "Contacte": "No"
+                },
+                {
+                    "nom": "Enfado",
+                    "descripcio": "Causa daño y no tiene ningún efecto secundario",
+                    "potencia": 120,
+                    "Contacte": "Si"
+                },
+                {
+                    "nom": "Acua Cola",
+                    "descripcio": "Causa daño y no tiene ningún efecto secundario",
+                    "potencia": 90,
+                    "Contacte": "Si"
+                }
+            ],
+            "imatge": "https://images.wikidexcdn.net/mwuploads/wikidex/9/99/latest/20230717180423/Dratini.png",
+            "evolucio": [
+                {
+                   "id": 148,
+                   "nivell_evolucio": 30
+                },
+                {
+                    "id": 149,
+                    "nivell_evolucio": 55
+                }
+            ]
+        }
+    ]
+}
